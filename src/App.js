@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import Coin from './Coin';
+import CoinsPage from './CoinsPage';
+import Pagination from './Pagination';
 
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const coinsPerPage = 5;
 
   useEffect(() => {
     axios
@@ -27,6 +30,11 @@ function App() {
     coin.name.toLowerCase().includes(search.toLowerCase()) || coin.symbol.toLowerCase().includes(search.toLowerCase())
   );
 
+  const indexOfLastCoin = currentPage * coinsPerPage;
+  const indexOfFirstCoin = indexOfLastCoin - coinsPerPage;
+  const currentCoins = filteredCoins.slice(indexOfFirstCoin, indexOfLastCoin);
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   return (
     <div className='coin-app'>
       <div className='coin-search'>
@@ -40,20 +48,8 @@ function App() {
           />
         </form>
       </div>
-      {filteredCoins.map(coin => {
-        return (
-          <Coin
-            key={coin.id}
-            name={coin.name}
-            price={coin.current_price}
-            symbol={coin.symbol}
-            marketcap={coin.total_volume}
-            volume={coin.market_cap}
-            image={coin.image}
-            priceChange={coin.price_change_percentage_24h}
-          />
-        );
-      })}
+      <CoinsPage coins={currentCoins} />
+      <Pagination coinsPerPage={coinsPerPage} totalCoins={filteredCoins.length} paginate={paginate} />
     </div>
   );
 }
