@@ -1,15 +1,14 @@
 import React from "react";
-import Coin from './Coin';
-import PropTypes from 'prop-types'
+import Coin from '../Coin/Coin';
+import PropTypes from 'prop-types';
 
-const CoinsPage = (props) => {
-    const { coins } = props;
-
+const CoinsPage = ({ coins }) => {
     return (
         <div>
-            {coins.map(coin => {
-                return (
-                    <Coin
+            {
+                coins.map(coin => {
+                    return (
+                        <Coin
                         key={coin.id}
                         name={coin.name}
                         price={coin.current_price}
@@ -18,15 +17,15 @@ const CoinsPage = (props) => {
                         volume={coin.market_cap}
                         image={coin.image}
                         priceChange={coin.price_change_percentage_24h}
-                    />
-                );
-            })}
+                    />)
+                })
+            }
         </div>
     )
 }
 
 CoinsPage.propTypes = {
-    coins: PropTypes.object
-};
+    coins: PropTypes.array
+}
 
 export default CoinsPage;
