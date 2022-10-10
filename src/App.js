@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import CoinsPage from "./components/pages/CoinsPage";
+import Pagination from "./components/Pagination/Pagination";
+import CoinLabel from "./components/Coin/CoinLabel";
+import Title from './components/global/Title';
 import "./App.css";
-import CoinsPage from "./CoinsPage";
-import Pagination from "./Pagination";
-import "./Coin.css";
+import "./components/Coin/Coin.css";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -41,7 +43,7 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">Crypto Tracker</h1>
+        <Title text="Crypto Tracker" className="coin-text" />
         <form>
           <input
             className="coin-input"
@@ -54,12 +56,12 @@ function App() {
       <div className="coin-header-container">
         <div className="coin-header-row">
           <div className="coin-header-label">
-            <p className="coin-label">Coin</p>
-            <p className="coin-label">Symbol</p>
-            <p className="coin-label">Price</p>
-            <p className="coin-label">Market Cap</p>
-            <p className="coin-label">24h change</p>
-            <p className="coin-label">24h Volume</p>
+            <CoinLabel text="Coint"/>
+            <CoinLabel text="Symbol"/>
+            <CoinLabel text="Price"/>
+            <CoinLabel text="Market Cap"/>
+            <CoinLabel text="24h change"/>
+            <CoinLabel text="24h Volume"/>
           </div>
         </div>
       </div>
