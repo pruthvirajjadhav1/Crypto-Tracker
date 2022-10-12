@@ -1,99 +1,50 @@
-## The website url :
-https://pruthvirajjadhav1.github.io/Crypto-Tracker/
+# Crypto-Tracker
+      This is Crypto-Tracker , it can track data of over 100000+ cryptocurrencies
+      
+![Screenshot](https://user-images.githubusercontent.com/86179143/195408740-ef8a2ef9-43b0-4571-8472-0fbfb29dada4.png)
 
-### This site is made using React js.
-feel free to contribute
-## Setup & Contribution Guidelines:
+# Steps for adding your name in the CONTRIBUTERS.md File
 
-1. Fork The repository
+1. Fork this repo
+2. Edit `Tools.md` file 
+3. Add Name of tool , link to the tool , a short  explanation of your favorite tool in the table .
+4. Edit `CONTRIBUTERS.md` file
+5. Add your Name also link your github profile seprated by a | (pipe).
+    eg. | Karan | https://github.com/karanS08 | 
+6. Make your pull request 🙌🏽.
+7. Don't forget to star the repo 🙂.
 
-Click on **Fork** button present on the upper-right area of the screen to create a copy of this repository to your GitHub account.
+## Steps for Contributing
 
+- Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
+- Clone your fork down to your local machine
 
-2. Clone The repository using git
-
-```bash
-
-git clone https://github.com/<YOUR_USERNAME>/Crypto-Tracker.git
-
+```markdown
+git clone https://github.com/pruthvirajjadhav1/Crypto-Tracker.git
 ```
 
--> Navigate to Crypto-Tracker repo directory
+- Create a branch
 
-```bash
-
-cd Crypto-Tracker
-
+```markdown
+git checkout -b branch-name
 ```
 
-3. Add a reference to the original repository as upstream
+- Make your changes (choose from any task below)
+- Commit and push
 
-
-```bash
-
-git remote add upstream https://github.com/pruthvirajjadhav1.github.io/Crypto-Tracker.git
-
-```
-Verify the remotes for this repository
-```bash
-
-git remote -v
-
-```
-Output of above command will be same as this:
-```bash
-
-origin  https://github.com/<YOUR_USERNAME>/Crypto-Tracker.git (fetch)
-origin  https://github.com/<YOUR_USERNAME>/Crypto-Tracker.git (push)
-upstream    https://github.com/Acadmica/Crypto-Tracker.git(fetch)
-upstream    https://github.com/Acadmica/Crypto-Tracker.git (push)
-
-```
-
-4. Update Fork Repo From Upstream(remain updated with the orignal repo).
-
-Update your local branch to be in sync with the original repo.
-
-```console
-
-$ git pull upstream master
-
-```
-
-
-### Contributing & making a pull request
-
-1. Create a new branch.
-
-```
-git checkout -b <your_branch_name>
-```
-
-2. Perform your desired changes to the code base.
-
-
-3. Track your changes:heavy_check_mark: .
-
-```
+```markdown
 git add .
+git commit -m 'Commit message'
+git push origin branch-name
 ```
 
-4. Commit your changes
-```
-git commit -m "Relevant message"
-```
-
-5. Push the committed changes in your feature branch to your remote repo.
-
-```
-git push -u origin <your_branch_name>
-```
-
-6. To create a pull request, click on `compare and pull requests`. Please ensure that you compare your feature branch to the desired branch `master` of the repo to make a PR.
+- Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
+- Wait for your PR review and merge approval!
+- **Star this repository** if you had fun!
 
 
-7. Add an appropriate title and relevant description to your pull request explaining your changes and efforts done.
-    And edit the PR template
-
-8. Click on `Create Pull Request`.
+# Contributors
+<a href="https://github.com/Kirankp25/TODO/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pruthvirajjadhav1/Crypto-Tracker" />
+</a>
 
