@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const CoinElement = ({ text }) => <p className="coin-label">{text}</p>
+const CoinElement = ({ text }) => <p className="coin-label">{text}</p>;
 
 CoinElement.propTypes = {
-  text: PropTypes.string
-}
+  text: PropTypes.string,
+};
 
 export default CoinElement;
