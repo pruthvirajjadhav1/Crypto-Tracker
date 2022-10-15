@@ -3,7 +3,7 @@ import axios from "axios";
 import CoinsPage from "./components/pages/CoinsPage";
 import Pagination from "./components/Pagination/Pagination";
 import CoinLabel from "./components/Coin/CoinLabel";
-import Title from './components/global/Title';
+import Title from "./components/global/Title";
 import "./App.css";
 import "./components/Coin/Coin.css";
 
@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
       )
       .then((res) => {
         setCoins(res.data);
@@ -56,12 +56,12 @@ function App() {
       <div className="coin-header-container">
         <div className="coin-header-row">
           <div className="coin-header-label">
-            <CoinLabel text="Coint"/>
-            <CoinLabel text="Symbol"/>
-            <CoinLabel text="Price"/>
-            <CoinLabel text="Market Cap"/>
-            <CoinLabel text="24h change"/>
-            <CoinLabel text="24h Volume"/>
+            <CoinLabel text="Coint" />
+            <CoinLabel text="Symbol" />
+            <CoinLabel text="Price" />
+            <CoinLabel text="Market Cap" />
+            <CoinLabel text="24h change" />
+            <CoinLabel text="24h Volume" />
           </div>
         </div>
       </div>
