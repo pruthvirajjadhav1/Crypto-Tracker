@@ -1,6 +1,8 @@
 # Crypto-Tracker
       This is Crypto-Tracker , it can track data of over 100000+ cryptocurrencies
       
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/https://github.com/pruthvirajjadhav1/Crypto-Tracker>)
+
 ![Screenshot](https://user-images.githubusercontent.com/86179143/195408740-ef8a2ef9-43b0-4571-8472-0fbfb29dada4.png)
 
 # Steps for adding your name in the CONTRIBUTERS.md File
