@@ -7,7 +7,7 @@
 
 # Steps for adding your name in the CONTRIBUTERS.md File
 
-1. Fork this repo
+1. Fork this repositry
 2. Edit `Tools.md` file 
 3. Add Name of tool , link to the tool , a short  explanation of your favorite tool in the table .
 4. Edit `CONTRIBUTERS.md` file
