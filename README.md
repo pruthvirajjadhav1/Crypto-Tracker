@@ -11,8 +11,7 @@
 2. Edit `Tools.md` file 
 3. Add Name of tool , link to the tool , a short  explanation of your favorite tool in the table .
 4. Edit `CONTRIBUTERS.md` file
-5. Add your Name also link your github profile seprated by a | (pipe).
-    eg. | Karan | https://github.com/karanS08 | 
+5. Add your Name also link your github profile seprated by a | (pipe). 
 6. Make your pull request 🙌🏽.
 7. Don't forget to star the repo 🙂.
 
@@ -46,7 +45,7 @@ git push origin branch-name
 
 
 # Contributors
-<a href="https://github.com/Kirankp25/TODO/graphs/contributors">
+<a href="https://github.com/pruthvirajjadhav1/Crypto-Tracker/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=pruthvirajjadhav1/Crypto-Tracker" />
 </a>
 
